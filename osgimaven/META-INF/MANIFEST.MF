@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: osgimaven
+Bundle-SymbolicName: osgimaven
+Bundle-Version: 1.0.0.qualifier
+Export-Package: osgimaven
+Bundle-Activator: osgimaven.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.core.runtime

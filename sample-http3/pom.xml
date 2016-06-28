@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.abdul.osgi.webex</groupId>
+  <artifactId>sample-http3</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>bundle</packaging>
+    <name>Sample Rest Webservices 1</name>
+    <description>sample rest web</description>
+     
+    <!-- Build Configuration -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${pom.groupId}.${pom.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Name>rest Service listener example</Bundle-Name>
+                        <Bundle-Description>A bundle that displays messages at startup and when service events occur</Bundle-Description>
+                        <Bundle-Vendor>Equinox</Bundle-Vendor>
+                        <Bundle-Version>1.0.0</Bundle-Version>
+                        <Bundle-Activator>com.service.Activator</Bundle-Activator>
+                        <Import-Package>javax.servlet,javax.servlet.http,org.osgi.framework;ve
+										 rsion="1.3.0",org.osgi.service.http;version="1.2.0",org.osgi.util.tracker;version="1.3.1"
+						</Import-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    
+ <dependencies>
+ <!-- https://mvnrepository.com/artifact/org.osgi/org.osgi.core -->
+	<dependency>
+  	  <groupId>org.osgi</groupId>
+  	  <artifactId>org.osgi.core</artifactId>
+  	  <version>4.3.0</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.eclipse.osgi/org.eclipse.osgi.services -->
+<dependency>
+    <groupId>org.eclipse.osgi</groupId>
+    <artifactId>org.eclipse.osgi.services</artifactId>
+    <version>3.2.100.v20100503</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.eclipse.osgi/org.eclipse.osgi.services -->
+<dependency>
+    <groupId>org.eclipse.osgi</groupId>
+    <artifactId>org.eclipse.osgi.services</artifactId>
+    <version>3.2.100.v20100503</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/org.eclipse.osgi/util -->
+<dependency>
+    <groupId>org.eclipse.osgi</groupId>
+    <artifactId>util</artifactId>
+    <version>3.1.200-v20070605</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/org.eclipse.osgi/jmx -->
+<dependency>
+    <groupId>org.eclipse.osgi</groupId>
+    <artifactId>jmx</artifactId>
+    <version>1.0.0-v20070510</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/org.eclipse.tycho/org.eclipse.osgi.compatibility.state -->
+<dependency>
+    <groupId>org.eclipse.tycho</groupId>
+    <artifactId>org.eclipse.osgi.compatibility.state</artifactId>
+    <version>1.0.100.v20150402-1551</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>3.0.1</version>
+</dependency>
+
+
+
+	
+	
+	<!-- https://mvnrepository.com/artifact/org.eclipse.osgi/org.eclipse.osgi -->
+<dependency>
+    <groupId>org.eclipse.osgi</groupId>
+    <artifactId>org.eclipse.osgi</artifactId>
+    <version>3.7.1</version>
+</dependency>
+	
+	
+	
+
+ </dependencies>   
+  
+
+    
+    
+    
+    
+</project>

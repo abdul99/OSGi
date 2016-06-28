@@ -1,0 +1,3 @@
+com\service\Activator.class
+com\service\Activator$HttpServiceTracker.class
+com\service\HelloWorldServlet3.class
